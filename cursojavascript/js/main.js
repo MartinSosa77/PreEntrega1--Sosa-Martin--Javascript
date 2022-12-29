@@ -22,7 +22,7 @@ function listaBarrios() {
 }
 
 do {
-  opcion = prompt("Solicitud de conexion \n 1 - Conexion domiciliaria de agua \n 2 - Conexion al servicio cloacal \n 3 - Derecho de volcamiento al servicio cloacal\n 4 - Salir")
+  opcion = prompt("Solicitud de conexion de Agua y Cloaca \n 1 - Conexion domiciliaria de agua \n 2 - Conexion al servicio cloacal \n 3 - Derecho de volcamiento al servicio cloacal\n 4 - Salir")
   opcion = parseInt(opcion)
   precioAgua5 = 75000
   precioAgua4 = 65000
@@ -142,7 +142,7 @@ do {
           break;
 
         case 2:
-          alert("El precio de su conexion es de cloaca es de " + "$ " + precioCloaca4)
+          alert("El precio de su conexion  de cloaca es de " + "$ " + precioCloaca4)
           formaDePago = prompt("Elegir forma de pago\n 1 - Contado\n 2 - Financiado en cuotas ")
           if (formaDePago == 1) {
             alert(" Tiene un descuendo del 10%, por lo que su conexion le quedaria en " + "$ " + descuentoContado(precioCloaca4, precioCloaca4))
@@ -159,7 +159,7 @@ do {
           break;
 
         case 3:
-          alert("El precio de su conexion es de cloaca es de " + "$ " + precioCloaca3)
+          alert("El precio de su conexion  de cloaca es de " + "$ " + precioCloaca3)
           formaDePago = prompt("Elegir forma de pago\n 1 - Contado\n 2 - Financiado en cuotas ")
           if (formaDePago == 1) {
             alert(" Tiene un descuendo del 10%, por lo que su conexion le quedaria en " + "$ " + descuentoContado(precioCloaca3, precioCloaca3))
@@ -175,7 +175,7 @@ do {
           break;
 
         case 4:
-          alert("El precio de su conexion es de cloaca es de " + "$ " + precioCloaca2)
+          alert("El precio de su conexion  de cloaca es de " + "$ " + precioCloaca2)
           formaDePago = prompt("Elegir forma de pago\n 1 - Contado\n 2 - Financiado en cuotas ")
           if (formaDePago == 1) {
             alert(" Tiene un descuendo del 10%, por lo que su conexion le quedaria en " + "$ " + descuentoContado(precioCloaca2, precioCloaca2))
@@ -189,7 +189,7 @@ do {
           break;
 
         case 5:
-          alert("El precio de su conexion es de cloaca es de " + "$ " + precioCloaca1)
+          alert("El precio de su conexion  de cloaca es de " + "$ " + precioCloaca1)
           formaDePago = prompt("Elegir forma de pago\n 1 - Contado\n 2 - Financiado en cuotas ")
           if (formaDePago == 1) {
             alert(" Tiene un descuendo del 10%, por lo que su conexion le quedaria en " + "$ " + descuentoContado(precioCloaca1, precioCloaca1))
@@ -217,11 +217,11 @@ do {
           formaDePago = prompt("Elegir forma de pago\n 1 - Contado\n 2 - Financiado en cuotas ")
           formaDePago = parseInt(formaDePago)
           if (formaDePago == 1) {
-            alert(" Tiene un descuendo del 10%, por lo que su conexion le quedaria en " + "$ " + descuentoContado(precioVolcamiento, precioVolcamiento))
+            alert(" Tiene un descuendo del 10%, por lo que  le quedaria en " + "$ " + descuentoContado(precioVolcamiento, precioVolcamiento))
             alertContinuar()
           }
           else {
-            alert("Su conexion le quedaria en 9 cuotas de " + "$ " + (calcularCuotas(precioVolcamiento, 9)))
+            alert("Su derecho de volcamiento le quedaria en 9 cuotas de " + "$ " + (calcularCuotas(precioVolcamiento, 9)))
             alertContinuar()
           }
           break;
@@ -230,13 +230,13 @@ do {
           alert("El precio de su derecho de volcamiento es de " + "$ " + precioVolcamiento)
           formaDePago = prompt("Elegir forma de pago\n 1 - Contado\n 2 - Financiado en cuotas ")
           if (formaDePago == 1) {
-            alert(" Tiene un descuendo del 10%, por lo que su conexion le quedaria en " + "$ " + descuentoContado(precioVolcamiento, precioVolcamiento))
+            alert(" Tiene un descuendo del 10%, por lo que  le quedaria en " + "$ " + descuentoContado(precioVolcamiento, precioVolcamiento))
 
             alertContinuar()
 
           }
           else {
-            alert("Su conexion le quedaria en 9 cuotas de " + "$ " + (calcularCuotas(precioVolcamiento, 9)))
+            alert("Su derecho de volcamiento en 9 cuotas de " + "$ " + (calcularCuotas(precioVolcamiento, 9)))
 
             alertContinuar()
           }
@@ -247,12 +247,12 @@ do {
           alert("El precio de su derecho de volcamiento es de " + "$ " + precioVolcamiento)
           formaDePago = prompt("Elegir forma de pago\n 1 - Contado\n 2 - Financiado en cuotas ")
           if (formaDePago == 1) {
-            alert(" Tiene un descuendo del 10%, por lo que su conexion le quedaria en " + "$ " + descuentoContado(precioVolcamiento, precioVolcamiento))
+            alert(" Tiene un descuendo del 10%, por lo que  le quedaria en " + "$ " + descuentoContado(precioVolcamiento, precioVolcamiento))
             alertContinuar()
 
           }
           else {
-            alert("Su conexion le quedaria en 12 cuotas de " + "$ " + (calcularCuotas(precioVolcamiento, 12)))
+            alert("Su derecho de volcamiento le quedaria en 12 cuotas de " + "$ " + (calcularCuotas(precioVolcamiento, 12)))
             alertContinuar()
           }
 
@@ -263,12 +263,12 @@ do {
           alert("El precio de su derecho de volcamiento es de " + "$ " + precioVolcamiento)
           formaDePago = prompt("Elegir forma de pago\n 1 - Contado\n 2 - Financiado en cuotas ")
           if (formaDePago == 1) {
-            alert(" Tiene un descuendo del 10%, por lo que su conexion le quedaria en " + "$ " + descuentoContado(precioVolcamiento, precioVolcamiento))
+            alert(" Tiene un descuendo del 10%, por lo que le quedaria en " + "$ " + descuentoContado(precioVolcamiento, precioVolcamiento))
             alertContinuar()
 
           }
           else {
-            alert("Su conexion le quedaria en 18 cuotas de " + "$ " + (calcularCuotas(precioVolcamiento, 18)))
+            alert("Su derecho de volcamiento le quedaria en 18 cuotas de " + "$ " + (calcularCuotas(precioVolcamiento, 18)))
             alertContinuar()
           }
           break;
@@ -282,7 +282,7 @@ do {
 
           }
           else {
-            alert("Su conexion le quedaria en 36 cuotas de " + "$ " + (calcularCuotas(precioVolcamiento, 36)))
+            alert("Su derecho de volcamiento le quedaria en 36 cuotas de " + "$ " + (calcularCuotas(precioVolcamiento, 36)))
             alertContinuar()
           }
           break;
