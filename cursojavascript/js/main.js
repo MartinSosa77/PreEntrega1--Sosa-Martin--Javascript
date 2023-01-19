@@ -25,10 +25,10 @@ class conexionCloaca {
   }
 }
 class DerechoDeVolcamiento {
-  constructor (precio){
+  constructor(precio) {
     this.precio = precio;
   }
- 
+
 }
 
 conexionCloacaCortaVereda = new conexionCloaca("corta", "vereda", " $ 19.340,70");
@@ -350,25 +350,198 @@ do {
     case 2:
       alert("Ingresando al menu de conexion de cloaca...")
       listaBarrios()
-      switch (barrio){
+      switch (barrio) {
         case 1:
-          case 2:
-            case 8:
-              case 10:
-                conexionCloacaCortaVereda.verInfoConexion()
-                alert("El precio de su conexion es de " + conexionCloacaCortaVereda.precio +" que se puede abonar hasta en 3 cuotas sin interes")
-                alert("Además debe abonar un derecho de conexion con un monto de  $ 59.889,50 que se puede abonar hasta en 9 cuotas sin interes")
-                alert(" El derecho de volcamiento le quedaria en 9 cuotas de " + calcularCuotas(59876.76,9)
-                ) 
+        case 2:
+        case 8:
+        case 10:
+          conexionCloacaCortaVereda.verInfoConexion()
+          alert("El precio de su conexion es de " + conexionCloacaCortaVereda.precio + " que se puede abonar hasta en 3 cuotas sin interes")
+
+          alert("Además debe abonar un derecho de conexion con un monto de  $ 59.889,50 que se puede abonar hasta en 9 cuotas sin interes o $ 49.916,25 de contado")
+          formaDePago = prompt("Elegir forma de pago de la conexion \n  1 - Contado \n 2 - Financiado en cuotas")
 
 
+          if (formaDePago == 1) {
+            descuentoContado(19340.70, 19340.70)
 
+          }
+          else {
+            alert("Su conexion le quedaria en tres cuotas de " + "$ " + (calcularCuotas(19340.70, 3)))
+
+          }
+          formaDePago = prompt("Elegir forma de pago del derecho de volcamiento \n  1 - Contado \n 2 - Financiado en cuotas")
+
+          if (formaDePago == 1) {
+            alert("El derecho de volcamiento le quedaria en un pago de $ 49.916,25")
+
+          }
+          else {
+
+            alert(" El derecho de volcamiento le quedaria en 9 cuotas de $ " + (calcularCuotas(59876.76, 9)))
+
+          }
+
+          alertContinuar()
+          break;
+
+        case 3:
+          conexionCloacaMediaAsf.verInfoConexion()
+          alert("El precio de su conexion es de " + conexionCloacaMediaAsf.precio + " que se puede abonar hasta en 3 cuotas sin interes")
+
+          alert("Además debe abonar un derecho de conexion con un monto de  $ 59.889,50 que se puede abonar hasta en 9 cuotas sin interes o $ 49.916,25 de contado")
+          formaDePago = prompt("Elegir forma de pago de la conexion \n  1 - Contado \n 2 - Financiado en cuotas")
+
+
+          if (formaDePago == 1) {
+            descuentoContado(46705.44, 46705.44)
+
+          }
+          else {
+            alert("Su conexion le quedaria en tres cuotas de " + "$ " + (calcularCuotas(46705.44, 3)))
+
+          }
+          formaDePago = prompt("Elegir forma de pago del derecho de volcamiento \n  1 - Contado \n 2 - Financiado en cuotas")
+
+          if (formaDePago == 1) {
+            alert("El derecho de volcamiento le quedaria en un pago de $ 49.916,25")
+
+          }
+          else {
+
+            alert(" El derecho de volcamiento le quedaria en 12 cuotas de $ " + (calcularCuotas(59876.76, 12)))
+
+          }
+          alertContinuar()
+          break;
+
+        case 7:
+          conexionCloacaMediaHorm.verInfoConexion()
+          alert("El precio de su conexion es de " + conexionCloacaMediaHorm.precio + " que se puede abonar hasta en 3 cuotas sin interes")
+
+          alert("Además debe abonar un derecho de conexion con un monto de  $ 59.889,50 que se puede abonar hasta en 9 cuotas sin interes o $ 49.916,25 de contado")
+          formaDePago = prompt("Elegir forma de pago de la conexion \n  1 - Contado \n 2 - Financiado en cuotas")
+
+
+          if (formaDePago == 1) {
+            descuentoContado(50541.66, 50541.66)
+
+          }
+          else {
+            alert("Su conexion le quedaria en tres cuotas de " + "$ " + (calcularCuotas(50541.66, 3)))
+
+          }
+          formaDePago = prompt("Elegir forma de pago del derecho de volcamiento \n  1 - Contado \n 2 - Financiado en cuotas")
+
+          if (formaDePago == 1) {
+            alert("El derecho de volcamiento le quedaria en un pago de $ 49.916,25")
+
+          }
+          else {
+
+            alert(" El derecho de volcamiento le quedaria en 12 cuotas de $ " + (calcularCuotas(59876.76, 12)))
+
+          }
+          alertContinuar()
+
+          break;
+
+        case 4:
+
+          conexionCloacaMediaTierra.verInfoConexion()
+          alert("El precio de su conexion es de " + conexionCloacaMediaTierra.precio + " que se puede abonar hasta en 3 cuotas sin interes")
+
+          alert("Además debe abonar un derecho de conexion con un monto de  $ 59.889,50 que se puede abonar hasta en 9 cuotas sin interes o $ 49.916,25 de contado")
+          formaDePago = prompt("Elegir forma de pago de la conexion \n  1 - Contado \n 2 - Financiado en cuotas")
+
+
+          if (formaDePago == 1) {
+            descuentoContado(39477.93, 39477.93)
+
+          }
+          else {
+            alert("Su conexion le quedaria en tres cuotas de " + "$ " + (calcularCuotas(39499.93, 3)))
+
+          }
+          formaDePago = prompt("Elegir forma de pago del derecho de volcamiento \n  1 - Contado \n 2 - Financiado en cuotas")
+
+          if (formaDePago == 1) {
+            alert("El derecho de volcamiento le quedaria en un pago de $ 49.916,25")
+
+          }
+          else {
+
+            alert(" El derecho de volcamiento le quedaria en 18 cuotas de $ " + (calcularCuotas(59876.76, 18)))
+
+          }
+
+          alertContinuar()
+          break;
+
+        case 9:
+          conexionCloacaMediaAsf.verInfoConexion()
+          alert("El precio de su conexion es de " + conexionCloacaMediaAsf.precio + " que se puede abonar hasta en 3 cuotas sin interes")
+
+          alert("Además debe abonar un derecho de conexion con un monto de  $ 59.889,50 que se puede abonar hasta en 9 cuotas sin interes o $ 49.916,25 de contado")
+          formaDePago = prompt("Elegir forma de pago de la conexion \n  1 - Contado \n 2 - Financiado en cuotas")
+
+
+          if (formaDePago == 1) {
+            descuentoContado(46705.24, 46705.24)
+
+          }
+          else {
+            alert("Su conexion le quedaria en tres cuotas de " + "$ " + (calcularCuotas(46705.24, 3)))
+
+          }
+          formaDePago = prompt("Elegir forma de pago del derecho de volcamiento \n  1 - Contado \n 2 - Financiado en cuotas")
+
+          if (formaDePago == 1) {
+            alert("El derecho de volcamiento le quedaria en un pago de $ 49.916,25")
+
+          }
+          else {
+
+            alert(" El derecho de volcamiento le quedaria en 18 cuotas de $ " + (calcularCuotas(59876.76, 18)))
+
+          }
+          alertContinuar()
+
+          break;
+
+          
+          case 5:
+            case 6:
+              conexionCloacaMediaTierra.verInfoConexion()
+              alert("El precio de su conexion es de " + conexionCloacaMediaTierra.precio + " que se puede abonar hasta en 3 cuotas sin interes")
+    
+              alert("Además debe abonar un derecho de conexion con un monto de  $ 59.889,50 que  se puede abonar hasta en 9 cuotas sin interes o $ 49.916,25 de contado")
+              formaDePago = prompt("Elegir forma de pago de la conexion \n  1 - Contado \n 2 - Financiado en cuotas")
+    
+    
+              if (formaDePago == 1) {
+                descuentoContado(39477.93, 39477.93)
+    
+              }
+              else {
+                alert("Su conexion le quedaria en tres cuotas de " + "$ " + (calcularCuotas(39499.93, 3)))
+    
+              }
+              formaDePago = prompt("Elegir forma de pago del derecho de volcamiento \n  1 - Contado \n 2 - Financiado en cuotas")
+    
+              if (formaDePago == 1) {
+                alert("El derecho de volcamiento le quedaria en un pago de $ 49.916,25")
+    
+              }
+              else {
+    
+                alert(" El derecho de volcamiento le quedaria en 36 cuotas de $ " + (calcularCuotas(59876.76, 36)))
+    
+              }
 
 
 
       }
-
-
 
 
       break;
@@ -382,6 +555,4 @@ do {
       alert("¡Opcion invalida!")
   }
 } while (opcion != 3)
-
-
 
