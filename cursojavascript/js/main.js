@@ -75,7 +75,7 @@ function alertContinuar() {
 // FUNCION- Listado de Barrios, prompt.
 
 function listaBarrios() {
-  barrio = prompt("Seleccione su Barrio \n 1 - Cinco Lomas \n 2 - Estanzuela\n 3 - Los Prados\n 4 - Cuesta Colorada \n 5 - La Campana \n 6 - Rumy\n 7 - Centro \n 8 - La Rufina\n 9 - Industrial \n 10 - La Deseada ")
+  barrio = prompt("Seleccione su Barrio \n 1 - Cinco Lomas \n 2 - Estanzuela\n 3 - Los Prados\n 4 - Cuesta Colorada \n 5 - La Campana \n 6 - Rumy\n 7 - Centro \n 8 - La Rufina\n 9 - Industrial \n 10 - La Deseada \n 11 - La Cuesta V. Residencial ")
   barrio = parseInt(barrio)
 
 }
@@ -90,6 +90,7 @@ btnAgua.addEventListener("click", (evento) => {
     case 2:
     case 8:
     case 10:
+      case 11:
 
       conexionCountry.verInfoConexion()
       alert("El precio de la conexion es de " + "$ " + conexionCountry.precio + " que se puede abonar hasta en 3 cuotas sin interes")
@@ -330,6 +331,9 @@ btnAgua.addEventListener("click", (evento) => {
 
       break;
 
+      default:
+        alert("Ingrese un barrio!")
+
 
 
 
@@ -337,19 +341,21 @@ btnAgua.addEventListener("click", (evento) => {
 }
 )
 
+btnCloaca.addEventListener("click",evento => {
+
+evento.preventDefault();
 
 
 listaBarrios()
 switch (barrio) {
-  case 1:
   case 2:
-  case 8:
   case 10:
+    case 11:
     conexionCloacaCortaVereda.verInfoConexion()
     alert("El precio de su conexion es de " + conexionCloacaCortaVereda.precio + " que se puede abonar hasta en 3 cuotas sin interes")
 
     alert("Además debe abonar un derecho de conexion con un monto de  $ 59.889,50 que se puede abonar hasta en 9 cuotas sin interes o $ 49.916,25 de contado")
-    formaDePago = prompt("Elegir forma de pago de la conexion \n  1 - Contado \n 2 - Financiado en cuotas")
+    formaDePago = prompt("Elegir forma de pago de la conexion \n  1 - Contado \n  2 - Financiado en cuotas")
 
     if (formaDePago == 1) {
       alertContinuar()
@@ -359,7 +365,7 @@ switch (barrio) {
       alert("Su conexion le quedaria en tres cuotas de " + "$ " + (calcularCuotas(19340.70, 3)))
 
     }
-    formaDePago = prompt("Elegir forma de pago del derecho de volcamiento \n  1 - Contado \n 2 - Financiado en cuotas")
+    formaDePago = prompt("Elegir forma de pago del derecho de volcamiento \n  1 - Contado \n  2 - Financiado en cuotas")
 
     if (formaDePago == 1) {
       alert("El derecho de volcamiento le quedaria en un pago de $ 49.916,25")
@@ -403,66 +409,17 @@ switch (barrio) {
     alertContinuar()
     break;
 
-  case 7:
-    conexionCloacaMediaHorm.verInfoConexion()
-    alert("El precio de su conexion es de " + conexionCloacaMediaHorm.precio + " que se puede abonar hasta en 3 cuotas sin interes")
+  case 1:
+    case 4:
+      case 6:
+        case 7:
+          case 8:
 
-    alert("Además debe abonar un derecho de conexion con un monto de  $ 59.889,50 que se puede abonar hasta en 9 cuotas sin interes o $ 49.916,25 de contado")
-    formaDePago = prompt("Elegir forma de pago de la conexion \n  1 - Contado \n 2 - Financiado en cuotas")
 
-
-    if (formaDePago == 1) {
-
-    }
-    else {
-      alert("Su conexion le quedaria en tres cuotas de " + "$ " + (calcularCuotas(50541.66, 3)))
-
-    }
-    formaDePago = prompt("Elegir forma de pago del derecho de volcamiento \n  1 - Contado \n 2 - Financiado en cuotas")
-
-    if (formaDePago == 1) {
-      alert("El derecho de volcamiento le quedaria en un pago de $ 49.916,25")
-
-    }
-    else {
-
-      alert(" El derecho de volcamiento le quedaria en 12 cuotas de $ " + (calcularCuotas(59876.76, 12)))
-
-    }
-    alertContinuar()
-
+    alert("Aún no tiene disponibilidad de la red cloacal para conectarse")
+    
     break;
 
-  case 4:
-
-    conexionCloacaMediaTierra.verInfoConexion()
-    alert("El precio de su conexion es de " + conexionCloacaMediaTierra.precio + " que se puede abonar hasta en 3 cuotas sin interes")
-
-    alert("Además debe abonar un derecho de conexion con un monto de  $ 59.889,50 que se puede abonar hasta en 9 cuotas sin interes o $ 49.916,25 de contado")
-    formaDePago = prompt("Elegir forma de pago de la conexion \n  1 - Contado \n 2 - Financiado en cuotas")
-
-
-    if (formaDePago == 1) {
-
-    }
-    else {
-      alert("Su conexion le quedaria en tres cuotas de " + "$ " + (calcularCuotas(39499.93, 3)))
-
-    }
-    formaDePago = prompt("Elegir forma de pago del derecho de volcamiento \n  1 - Contado \n 2 - Financiado en cuotas")
-
-    if (formaDePago == 1) {
-      alert("El derecho de volcamiento le quedaria en un pago de $ 49.916,25")
-
-    }
-    else {
-
-      alert(" El derecho de volcamiento le quedaria en 18 cuotas de $ " + (calcularCuotas(59876.76, 18)))
-
-    }
-
-    alertContinuar()
-    break;
 
   case 9:
     conexionCloacaMediaAsf.verInfoConexion()
@@ -498,7 +455,6 @@ switch (barrio) {
 
 
   case 5:
-  case 6:
     conexionCloacaMediaTierra.verInfoConexion()
     alert("El precio de su conexion es de " + conexionCloacaMediaTierra.precio + " que se puede abonar hasta en 3 cuotas sin interes")
 
@@ -524,12 +480,21 @@ switch (barrio) {
     else {
 
       alert(" El derecho de volcamiento le quedaria en 36 cuotas de $ " + (calcularCuotas(59876.76, 36)))
+      alertContinuar()
 
     }
 
+  break;
 
 
+  default: 
+
+alert("Ingrese un barrio!")
+
+  
 }
+})
+
 
 
 
