@@ -1,18 +1,12 @@
-*{ margin: 0;
-padding: 0;}
-.container{
-    width: 100%;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.header{
     background-color: aqua;
-    height: 400px;
-    display: flex;
+    height: 100%;
+    width: 100%;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   
-}
-h1:hover{
-    text-decoration: underline;
-}
-h1{
-    margin-bottom: 100px;
+
 }
