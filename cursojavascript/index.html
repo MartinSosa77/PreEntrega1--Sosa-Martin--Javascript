@@ -1,29 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  </head>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ </head>
+<title>Document</title>
 </head>
 <header class="header">
-    <div   id = "divMain" class="container">
-      <h1> Simulador de conexiones de agua y cloaca</h1>
-    <p> Sosa Martin Federico - PreEntrega 2 - Javascript Comision 44930 </p>
-    </div>
-</header>
-<body class=>
+  <div id="divMain" class="container">
+    <h1> Simulador - Conexiones de Cloaca</h1>
 
-  <div class="d-grid gap-2">
-    <button id="btnAgua" class="btn btn-primary" type="button">Agua</button>
-    <button id="btnCloaca" class="btn btn-primary" type="button">Cloaca</button>
+  </div>
+</header>
+
+<body>
+
+  <div class="divForm">
+    <form class="form">
+      <div class="input-group">
+        <span class="input-group-text">Barrio</span>
+        <select id="selectConexion" class="      form-select t-center" aria-label="Default select example" autofocus>
+        </select>
+       
+      </div>
+     
+      <div class="input-group">
+        <span class="input-group-text">Titular</span>
+        <input id="inputApellido" type="text" class="  form-control inputForm" placeholder="Apellido"
+          aria-describedby="basic-addon2" required>
+        <input id="inputNombre" type="text" class="  form-control inputForm" placeholder="Nombre"
+          aria-describedby="basic-addon2" required>
+      </div>
+      <div class="input-group">
+        <span class="input-group-text ">Direccion</span>
+        <input id="inputManzana" maxlength="3" type="text" aria-label="First name" class="form-control"
+          placeholder="Manzana">
+        <input id="inputLote" maxlength="3" type="text" aria-label="Last name" class="form-control" placeholder="Lote">
+
+      </div>
+      <button type="submit" class="btn btn-primary" id="btnConsultar">Consultar</button>
+
+
+    </form>
+  </div>
+
+  <div id="divTabla">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr class="tabla">
+          <th scope="col">Titular</th>
+          <th scope="col">Barrio</th>
+          <th scope="col">Manzana</th>
+          <th scope="col">Lote</th>
+          <th scope="col">Tipo de conexion</th>
+          <th scope="col">Precio Conexion</th>
+          <th scope="col">Precio Derecho de Volcamiento</th>
+          <th scope="col">Total </th>
+    
+
+        </tr>
+        
+      </thead>
+      <tbody id="tablaId">
+
+
+        
+      </tbody>
+     
+    </table>
+   
   </div>
   
+    <button id="btnRequisitos" type="submit" class="btnRequisitos btn btn-primary">Requisitos</button> 
+    <button id="btnConexion" type="submit" class=" btnConexion btn btn-primary">Solicitar Conexión</button>
   
-  <script src="./js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <script src="./scripts/Conexion.js"></script>
+  <script src="./scripts/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
+
 </html>

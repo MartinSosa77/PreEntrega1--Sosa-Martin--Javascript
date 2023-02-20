@@ -1,0 +1,72 @@
+[
+    {
+        "barrio": "Industrial",
+        "decimal": ",49",
+        "derecho": "49.916,25",
+        "precio": "46.705,24",
+        "tipo": "Media"
+    },
+    {
+        "barrio": "Dr.Cocca",
+        "decimal": ",18",
+        "derecho": "49.916,25",
+        "precio": "39.447,93",
+        "tipo": "Media"
+    },
+    {
+        "barrio": "La Estanzuela I",
+        "decimal": ",95",
+        "derecho": "49.916,25",
+        "precio": "19.340,70",
+        "tipo": "Vereda"
+    },
+    {
+        "barrio": "La Estanzuela II",
+        "decimal": ",95",
+        "derecho": "49.916,25",
+        "precio": "19.340,70",
+        "tipo": "Vereda"
+    },
+    {
+        "barrio": "Terrazas de La Estanzuela",
+        "decimal": ",95",
+        "derecho": "49.916,25",
+        "precio": "19.340,70",
+        "tipo": "Vereda"
+    },
+    {
+        "barrio": "La Cuesta Villa Residencial",
+        "decimal": ",95",
+        "derecho": "49.916,25",
+        "precio": "19.340,70",
+        "tipo": "Vereda"
+    },
+    {
+        "barrio": "Los Prados I",
+        "decimal": ",49",
+        "derecho": "49.916,25",
+        "precio": "46.705,24",
+        "tipo": "Media"
+    },
+    {
+        "barrio": "Los Prados II",
+        "decimal": ",49",
+        "derecho": "49.916,25",
+        "precio": "46.705,24",
+        "tipo": "Media"
+    },
+    {
+        "barrio": "Altos de La Calera",
+        "decimal": ",49",
+        "derecho": "49.916,25",
+        "precio": "46.705,24",
+        "tipo": "Media"
+    },
+    {
+        "barrio": "Minetti 3",
+        "decimal": ",18",
+        "derecho": "49.916,25",
+        "precio": "36.478.93",
+        "tipo": "Media"
+    }
+]
