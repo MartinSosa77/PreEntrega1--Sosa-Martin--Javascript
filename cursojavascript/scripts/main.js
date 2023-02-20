@@ -18,7 +18,7 @@ const btnConexion = document.getElementById("btnConexion")
 
 
 
-/*conexiones.push(new ConexionCloaca("Industrial", "Media", "46.705,24", "49.916,25", ",49"))
+conexiones.push(new ConexionCloaca("Industrial", "Media", "46.705,24", "49.916,25", ",49"))
 conexiones.push(new ConexionCloaca("Dr.Cocca", "Media", "39.477,93", " 49.916,25 ", ",18"))
 conexiones.push(new ConexionCloaca("La Estanzuela I", "Vereda", "19.340,70", " 49.916,25 ", ",95"))
 conexiones.push(new ConexionCloaca("La Estanzuela II", "Vereda", "19.340,70", " 49.916,25 ", ",95"))
@@ -30,7 +30,7 @@ conexiones.push(new ConexionCloaca("Altos de La Calera", "Media", "46.705,24", "
 conexiones.push(new ConexionCloaca("Minetti 3", "Media", "39.478,93", " 49.916,25 ", ",18"))
 
 localStorage.setItem("conexiones", JSON.stringify(conexiones));
-conexiones = JSON.parse(localStorage.getItem("conexiones"))*/
+conexiones = JSON.parse(localStorage.getItem("conexiones"))
 
 
 
@@ -87,7 +87,6 @@ function buscarConexiones() {
     Swal.fire({
       icon: 'error',
       title: 'Complete el formulario!',
-      footer: '<a href="">Why do I have this issue?</a>'
 
     })
   }
