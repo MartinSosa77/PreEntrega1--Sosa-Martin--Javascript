@@ -41,12 +41,18 @@
    border-spacing: 2px;
    margin-top: 20px;
 }
-
-.btnRequisitos {
-margin-left: 2200px;
-
+.botoncitos{
+    display: flex;
+    flex-direction: column;
+   align-content: center;
+   align-items: center;
+   
+ 
+    
+   
 }
-.btnConexion{
-    margin-top: 50px;
-    margin-left: 1100px;
+.btnRequisitos{
+  margin: 30px;
+  
 }
+

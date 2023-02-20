@@ -91,9 +91,13 @@ function buscarConexiones() {
     })
   }
   else {
+    fetch("scripts/conexiones.json")
+    .then(response => response.json())
+    .then(conexiones => {
     let found = conexiones.find(conexion => {
       return conexion.barrio === selectConexion.value;
     })
+  
 
     const tr = document.createElement("tr");
     tr.innerHTML = `
@@ -116,6 +120,7 @@ function buscarConexiones() {
       showConfirmButton: false,
       timer: 1500
     })
+  })
   }
  
 
